@@ -1,3 +1,5 @@
+![alt text](https://github.com/TheCodersDream/React-Auto-Complete-Text-Input/blob/master/auto_complete.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
