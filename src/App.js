@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {languageList} from './languageList';
+import AutoCompleteText from "./auto-complete/AutoCompleteText";
 
 class App extends Component {
+
   render() {
+      const suggestionData = [];
+
+      for (let languageCode in languageList) {
+          if (languageList[languageCode]) {
+              suggestionData.push(languageList[languageCode].name);
+          }
+      }
+
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container mt-5">
+        <div className={'col-6 m-auto'}>
+            <AutoCompleteText data={suggestionData} minChars={2}/>
+        </div>
       </div>
     );
   }

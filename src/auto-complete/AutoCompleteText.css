@@ -1,0 +1,29 @@
+.auto-complete-container {
+    position: relative;
+    width: 100%;
+}
+.auto-complete-container input {
+    outline: none;
+}
+.auto-complete-container input :focus {
+    border: inherit;
+}
+.auto-complete-container .auto-complete-data-container {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.auto-complete-container ul {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.auto-complete-container li:hover {
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+
+.active-grey {
+    background-color: dodgerblue;
+    color: white;
+}
